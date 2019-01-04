@@ -1,0 +1,68 @@
+body {
+  font-family: 'Tinos', serif;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: antiquewhite;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+  @extend .vapour-colour;
+}
+
+#canvas {
+  width: 860px;
+  height: 640px;
+}
+
+.form {
+  margin-bottom: 50px;
+  label {
+    @extend .vapour-colour;
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+.img-none {
+  display: none;
+}
+
+.inputfile {
+  margin-bottom: 20px;
+}
+
+.filters {
+  padding: 10px 20px;
+
+  .filter {
+    input {
+      margin: 5px 10px 15px 0;
+      width: 70%;
+      padding: 5px 10px;
+      background: transparent;
+      border-top: none;
+      border-left: none;
+      border-bottom: 1px solid #01cdfe;
+      border-right: 1px solid #01cdfe;
+      color: #ff71ce;
+      font-weight: 700;
+    }
+  }
+
+  label {
+    @extend .vapour-colour;
+    margin-bottom: 5px;
+    display: block;
+  }
+}
+
+.vapour-colour {
+  color: #01cdfe;
+  letter-spacing: 10px;
+  text-shadow: 2px 2px #05ffa1;
+}

@@ -1,31 +1,52 @@
 body {
-  font-family: 'Thasadith', sans-serif;
+  font-family: 'Tinos', serif;
   padding: 0;
   margin: 0 auto;
-}
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: antiquewhite; }
 
-h1 {
-  font-family:
-}
+.heading {
+  width: 100%;
+  text-align: center; }
 
-.form label {
-  display: block;
-  margin-bottom: 5px;
-}
+#canvas {
+  width: 860px;
+  height: 640px; }
 
 .form {
-  margin-bottom: 50px;
-}
+  margin-bottom: 50px; }
+  .form label {
+    display: block;
+    margin-bottom: 5px; }
 
 .img-none {
-  display: none;
-}
+  display: none; }
+
+.inputfile {
+  margin-bottom: 20px; }
 
 .filters {
-  padding: 10px 20px;
-}
+  padding: 10px 20px; }
+  .filters .filter input {
+    margin: 5px 10px 15px 0;
+    width: 70%;
+    padding: 5px 10px;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #01cdfe;
+    border-right: 1px solid #01cdfe;
+    color: #ff71ce;
+    font-weight: 700; }
+  .filters label {
+    margin-bottom: 5px;
+    display: block; }
 
-.filter label {
-  margin-bottom: 5px;
-  display: block;
-}
+.vapour-colour, .heading, .form label, .filters label {
+  color: #01cdfe;
+  letter-spacing: 10px;
+  text-shadow: 2px 2px #05ffa1; }
+
+/*# sourceMappingURL=style.css.map */

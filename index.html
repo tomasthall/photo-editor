@@ -1,50 +1,50 @@
 <!DOCTYPE html>
-<html lang="pl" dir="ltr">
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <title>Edytor zdjęć</title>
-    <link href="https://fonts.googleapis.com/css?family=Thasadith:400,700" rel="stylesheet">
+    <title>Photo Editor</title>
+    <link href="https://fonts.googleapis.com/css?family=Tinos:400,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body style="display: flex; justify-content: center; flex-wrap: wrap;">
-    <h1 style="width: 100%; text-align: center;">Edytor zdjęć</h1>
-    <div class="canvas-wrapper">
-      <canvas id="canvas" width="860" height="640" style="border: 1px solid black"></canvas>
+</head>
+<body>
+<h1 class="heading">Photo Editor</h1>
+<div class="canvas-wrapper">
+    <canvas id="canvas"></canvas>
+</div>
+<div class="filters">
+    <div>
+        <label class="filter__label">Choose an image</label>
+        <input type="file" name="file" id="fileUpload" class="inputfile">
     </div>
-      <div class="filters">
-        <div class="form">
-          <label for="file">Wybierz zdjęcie</label>
-          <input type="file" name="file" id="fileUpload" class="inputfile">
-        </div>
-        <div class="filter">
-          <label>Jasność</label>
-          <input type="range" id="contrast" min="0" max="50"  step="1" value="0" onchange="brightness(this.value)">
-        </div>
-        <div class="filter">
-          <label>Nasycenie</label>
-          <input type="range" id="contrast" min="0" max="360"  step="6" value="0" onchange="hue(this.value)">
-        </div>
-        <div class="filter">
-          <label>Szarość</label>
-          <input type="range" id="grayscale" min="0" max="100" step="1" value="0" onchange="grayscale(this.value)">
-        </div>
-        <div class="filter">
-          <label>Saturacja</label>
-          <input type="range" id="blur" min="1" max="100"  step="1" value="0" onchange="saturate(this.value)">
-        </div>
-        <div class="filter">
-          <label>Sepia</label>
-          <input type="range" id="sepia" min="0" max="100"  step="1" value="0" onchange="sepia(this.value)">
-        </div>
-        <div class="filter">
-          <label>Kontrast</label>
-          <input type="range" id="contrast" min="1" max="200"  step="1" value="0" onchange="contrast(this.value)">
-        </div
-      </div>
-      <div class="img-none">
-        <img id="source" src="" />
-      </div>
-    <script src="script.js">
-    </script>
-  </body>
+    <div class="filter">
+        <label>Brightness</label>
+        <input type="number" min="1" max="50" value="1" onchange="brightness(this.value)">
+    </div>
+    <div class="filter">
+        <label>Hue</label>
+        <input type="number" min="0" max="360" value="1" onchange="hue(this.value)">
+    </div>
+    <div class="filter">
+        <label>Grayscale</label>
+        <input type="number" min="0" max="100" step="1" value="0" onchange="grayscale(this.value)">
+    </div>
+    <div class="filter">
+        <label>Saturate</label>
+        <input type="number" min="1" max="100" step="1" value="0" onchange="saturate(this.value)">
+    </div>
+    <div class="filter">
+        <label>Sepia</label>
+        <input type="number" min="0" max="100" step="1" value="0" onchange="sepia(this.value)">
+    </div>
+    <div class="filter">
+        <label>Contrast</label>
+        <input type="number" min="1" max="200" step="1" value="0" onchange="contrast(this.value)">
+    </div>
+</div>
+<div class="img-none">
+    <img id="source" src=""/>
+</div>
+<script src="script.js">
+</script>
+</body>
 </html>
