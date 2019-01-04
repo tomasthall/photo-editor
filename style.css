@@ -1,0 +1,31 @@
+body {
+  font-family: 'Thasadith', sans-serif;
+  padding: 0;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family:
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form {
+  margin-bottom: 50px;
+}
+
+.img-none {
+  display: none;
+}
+
+.filters {
+  padding: 10px 20px;
+}
+
+.filter label {
+  margin-bottom: 5px;
+  display: block;
+}
