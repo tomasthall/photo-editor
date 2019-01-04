@@ -19,6 +19,23 @@ body {
   height: 640px;
 }
 
+.canvas-wrapper {
+  position: relative;
+  .vaporwave-gif-one {
+    position: absolute;
+    z-index: 333;
+    top: -90px;
+    left: -120px;
+  }
+
+  .vaporwave-gif-two {
+    position: absolute;
+    z-index: 333;
+    bottom: -90px;
+    right: -120px;
+  }
+}
+
 .form {
   margin-bottom: 50px;
   label {
