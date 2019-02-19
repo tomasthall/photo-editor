@@ -27,6 +27,10 @@ body {
     z-index: 333;
     bottom: -90px;
     right: -120px; }
+    @media (max-width: 1199px) {
+      .canvas-wrapper .vaporwave-gif-two {
+        left: 0;
+        width: 200px; } }
 
 .form {
   margin-bottom: 50px; }
