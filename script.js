@@ -1,24 +1,23 @@
-var canvas = document.getElementById('canvas');
-var ctx = canvas.getContext('2d');
-var sourceImg = document.getElementById('source');
+let canvas = document.getElementById('canvas');
+let ctx = canvas.getContext('2d');
+let sourceImg = document.getElementById('source');
 
 document.getElementById('fileUpload').onchange = function(e) {
-  var tgt = e.target || window.event.srcElement,
+  let tgt = e.target || window.event.srcElement,
       files = tgt.files;
       if (FileReader && files && files.length) {
-          var fr = new FileReader();
-          fr.onload = function () {
-            console.log(fr);
+          let fr = new FileReader();
+          fr.onload = function (e) {g
               document.getElementById('source').src = fr.result;
               setTimeout(function() {
                 ctx.filter = 'none';
                 ctx.drawImage(document.getElementById('source'), 0, 0, canvas.width, canvas.height);
               }, 300);
-          }
+          };
           fr.readAsDataURL(files[0]);
+
       }
 };
-
 
 function grayscale(e) {
     ctx.filter = 'grayscale(' + e + '%)';
